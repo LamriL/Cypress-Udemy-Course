@@ -6,5 +6,6 @@ module.exports = defineConfig({
       // implement node event listeners here
       return require('./cypress/plugins/index.js')(on,config)
     },
+    specPattern: '**/*.cy.js',
   },
 });

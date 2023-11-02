@@ -18,6 +18,8 @@
     "cypress": "^13.3.0"
   },
   "devDependencies": {
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "neat-csv": "^5.2.0",
+    "xlsx": "^0.18.5"
   }
 }

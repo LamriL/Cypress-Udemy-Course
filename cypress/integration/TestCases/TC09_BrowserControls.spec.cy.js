@@ -1,7 +1,7 @@
 describe('Advanced UI Elements',function(){
  
     it('Browser Controls',function(){
-        cy.visit('https://react-redux.realworld.io/')
+        cy.visit('/')
         cy.contains('Sign in').click()
         cy.go('back')
         cy.go('forward')

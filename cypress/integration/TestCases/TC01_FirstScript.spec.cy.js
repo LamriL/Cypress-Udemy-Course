@@ -3,7 +3,7 @@
     describe('Login Functionality', function(){
 
         it('Login test using COnduit', function(){
-            cy.visit('https://react-redux.realworld.io/')
+            cy.visit('/')
             cy.get('a[href="#login"]').click()
             cy.get('input[placeholder="Email"]').type('cypressdemo@gmail.com')
             cy.get('input[placeholder="Password"]').type('cypressdemo')

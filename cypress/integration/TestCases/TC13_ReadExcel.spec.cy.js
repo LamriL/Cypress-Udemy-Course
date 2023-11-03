@@ -10,7 +10,7 @@ describe('Excel test',function(){
     })
  
     it('Conduit - Valid Credentials',function(){
-        cy.visit('https://react-redux.realworld.io/')
+        cy.visit('/')
         cy.contains('Sign in').click()
         cy.get('input[type="email"]').type(data[0].username)
         cy.get('input[type="password"]').type(data[0].password)
@@ -20,7 +20,7 @@ describe('Excel test',function(){
     })
  
     it('Conduit - Invalid Credentials',function(){
-        cy.visit('https://react-redux.realworld.io/')
+        cy.visit('/')
         cy.contains('Sign in').click()
         cy.get('input[type="email"]').type(data[1].username)
         cy.get('input[type="password"]').type(data[1].password)

@@ -13,7 +13,7 @@ describe('Csv test',function(){
     })
  
     it('Conduit - Valid Credentials',function(){
-        cy.visit('https://react-redux.realworld.io/')
+        cy.visit('/')
         cy.contains('Sign in').click()
         cy.get('input[type="email"]').type(table[0].username)
         cy.get('input[type="password"]').type(table[0].password)
@@ -23,7 +23,7 @@ describe('Csv test',function(){
     })
  
     it('Conduit - Invalid Credentials',function(){
-        cy.visit('https://react-redux.realworld.io/')
+        cy.visit('/')
         cy.contains('Sign in').click()
         cy.get('input[type="email"]').type(table[1].username)
         cy.get('input[type="password"]').type(table[1].password)

@@ -5,7 +5,7 @@ describe('Fixtures test',function(){
     })
  
     it('Conduit - Valid Credentials',function(){
-        cy.visit('https://react-redux.realworld.io/')
+        cy.visit('/')
         cy.contains('Sign in').click()
         cy.get('input[type="email"]').type(this.data.email)
         cy.get('input[type="password"]').type(this.data.password)
@@ -15,7 +15,7 @@ describe('Fixtures test',function(){
     })
  
     it('Conduit - Invalid Credentials',function(){
-        cy.visit('https://react-redux.realworld.io/')
+        cy.visit('/')
         cy.contains('Sign in').click()
         cy.get('input[type="email"]').type(this.data.email)
         cy.get('input[type="password"]').type(this.data.passwordWrong)

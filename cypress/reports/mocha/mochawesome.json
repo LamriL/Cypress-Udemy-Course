@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-11-24T14:34:33.181Z",
+    "end": "2023-11-24T14:34:41.301Z",
+    "duration": 8120,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a1f23f38-8d17-4c13-ab1a-9f53159500e7",
+      "title": "",
+      "fullFile": "cypress\\integration\\smoke\\TC01_FirstScript.spec.cy.js",
+      "file": "cypress\\integration\\smoke\\TC01_FirstScript.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "99b7ebc3-b4c3-4361-a6cf-87f653f26ec1",
+          "title": "Login Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login test using COnduit",
+              "fullTitle": "Login Functionality Login test using COnduit",
+              "timedOut": null,
+              "duration": 8059,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/TC01_FirstScript.spec.cy.js/Login Functionality -- Login test using COnduit (failed).png\"",
+              "code": "cy.visit('/');\ncy.get('a[href=\"#logis\"]').click();\ncy.get('input[placeholder=\"Email\"]').type('cypressdemo@gmail.com');\ncy.get('input[placeholder=\"Password\"]').type('cypressdemo');\ncy.get('form').submit(); // or button[type='submit']\ncy.get('a[href=\"#settings\"]').click();\ncy.get('button').contains('Or click here to logout.').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `a[href=\"#logis\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `a[href=\"#logis\"]`, but never found it.\n    at Context.eval (webpack://cypress-udemy-course/./cypress/integration/smoke/TC01_FirstScript.spec.cy.js:7:15)",
+                "diff": null
+              },
+              "uuid": "06a8e459-dd62-48fd-b91f-31b3dbd1c078",
+              "parentUUID": "99b7ebc3-b4c3-4361-a6cf-87f653f26ec1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "06a8e459-dd62-48fd-b91f-31b3dbd1c078"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8059,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

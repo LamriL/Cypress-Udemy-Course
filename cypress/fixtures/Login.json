@@ -1,0 +1,9 @@
+{
+    "user": {
+        "email": "cypressdemo@gmail.com",
+        "username": "Lamri-Laib-Student",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiY3lwcmVzc2RlbW9AZ21haWwuY29tIiwidXNlcm5hbWUiOiJjeXByZXNzZGVtbyJ9LCJpYXQiOjE3MDEyNDUxMDUsImV4cCI6MTcwNjQyOTEwNX0.8oh6TaggjDYcMuYuJilTdfIq123KSc3L-UBtLAdSCj8"
+    }
+}

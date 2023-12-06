@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-06T13:20:01.022Z",
+    "end": "2023-12-06T13:20:11.508Z",
+    "duration": 10486,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b26a2929-257d-4f7f-a5b3-4c43c17510b6",
+      "title": "",
+      "fullFile": "cypress\\integration\\TestCases\\TC18_Mock.spec.cy.js",
+      "file": "cypress\\integration\\TestCases\\TC18_Mock.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "88f68e0c-a80b-45d2-abb9-2d0c94d06bcd",
+          "title": "Mock Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tag Mock",
+              "fullTitle": "Mock Testing Tag Mock",
+              "timedOut": null,
+              "duration": 5341,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('GET', '/api/tags', {\n  fixture: 'Tags.json'\n});\ncy.contains('Your Feed').should('be.visible');\ncy.get('.tag-list').should('contain', 'cypress').and('contain', 'udemy').and('contain', 'course');",
+              "err": {},
+              "uuid": "c0717626-d5cc-424d-b7e1-07eb7a6643b4",
+              "parentUUID": "88f68e0c-a80b-45d2-abb9-2d0c94d06bcd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Article Mock",
+              "fullTitle": "Mock Testing Article Mock",
+              "timedOut": null,
+              "duration": 3600,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('GET', '/api/articles/*', {\n  fixture: 'Article.json'\n});\ncy.contains('Your Feed').should('be.visible');\ncy.contains('Global Feed').click();\ncy.get('.col-md-9').should('contain', 'Demo Mock Cypress');",
+              "err": {},
+              "uuid": "63a7ccb6-dd2b-4356-91aa-337f34405396",
+              "parentUUID": "88f68e0c-a80b-45d2-abb9-2d0c94d06bcd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login User Mock",
+              "fullTitle": "Mock Testing Login User Mock",
+              "timedOut": null,
+              "duration": 1413,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('POST', '/api/users/login', {\n  fixture: 'Login.json'\n});\ncy.get('a[href^=\"#@\"]').should('contain', 'Lamri-Laib-Student');",
+              "err": {},
+              "uuid": "61008968-cfc6-4787-80d8-9c683d2de225",
+              "parentUUID": "88f68e0c-a80b-45d2-abb9-2d0c94d06bcd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c0717626-d5cc-424d-b7e1-07eb7a6643b4",
+            "63a7ccb6-dd2b-4356-91aa-337f34405396",
+            "61008968-cfc6-4787-80d8-9c683d2de225"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10354,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

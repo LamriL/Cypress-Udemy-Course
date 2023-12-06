@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2023-11-24T14:34:33.181Z",
-    "end": "2023-11-24T14:34:41.301Z",
-    "duration": 8120,
+    "start": "2023-12-06T13:17:31.839Z",
+    "end": "2023-12-06T13:17:39.812Z",
+    "duration": 7973,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a1f23f38-8d17-4c13-ab1a-9f53159500e7",
+      "uuid": "92995e98-c589-483f-81f0-334ee97a9537",
       "title": "",
       "fullFile": "cypress\\integration\\smoke\\TC01_FirstScript.spec.cy.js",
       "file": "cypress\\integration\\smoke\\TC01_FirstScript.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "99b7ebc3-b4c3-4361-a6cf-87f653f26ec1",
+          "uuid": "66353469-69e5-4dce-a8ed-a50eb45ce8f8",
           "title": "Login Functionality",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login test using COnduit",
               "fullTitle": "Login Functionality Login test using COnduit",
               "timedOut": null,
-              "duration": 8059,
+              "duration": 7926,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `a[href=\"#logis\"]`, but never found it.\n    at Context.eval (webpack://cypress-udemy-course/./cypress/integration/smoke/TC01_FirstScript.spec.cy.js:7:15)",
                 "diff": null
               },
-              "uuid": "06a8e459-dd62-48fd-b91f-31b3dbd1c078",
-              "parentUUID": "99b7ebc3-b4c3-4361-a6cf-87f653f26ec1",
+              "uuid": "edd5aacf-5edc-46d2-b075-69d347f65e67",
+              "parentUUID": "66353469-69e5-4dce-a8ed-a50eb45ce8f8",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "06a8e459-dd62-48fd-b91f-31b3dbd1c078"
+            "edd5aacf-5edc-46d2-b075-69d347f65e67"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 8059,
+          "duration": 7926,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

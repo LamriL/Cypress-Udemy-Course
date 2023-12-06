@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-12-06T13:17:41.492Z",
-    "end": "2023-12-06T13:17:46.136Z",
-    "duration": 4644,
+    "start": "2023-12-06T14:14:56.725Z",
+    "end": "2023-12-06T14:15:02.333Z",
+    "duration": 5608,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "03d2b361-650f-4295-b0e5-d0aa14925096",
+      "uuid": "ff9247f9-0432-4469-8a8b-0fa39d093995",
       "title": "",
       "fullFile": "cypress\\integration\\TestCases\\TC01_FirstScript.spec.cy.js",
       "file": "cypress\\integration\\TestCases\\TC01_FirstScript.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3cefe69a-ecf6-49d7-b6fa-30557aae8a03",
+          "uuid": "826c523e-1a13-40e3-a9d4-55bf1b9c9793",
           "title": "Login Functionality",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Login test using COnduit",
               "fullTitle": "Login Functionality Login test using COnduit",
               "timedOut": null,
-              "duration": 4587,
+              "duration": 5565,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('/');\ncy.get('a[href=\"#login\"]').click();\ncy.get('input[placeholder=\"Email\"]').type('cypressdemo@gmail.com');\ncy.get('input[placeholder=\"Password\"]').type('cypressdemo');\ncy.get('form').submit(); // or button[type='submit']\ncy.get('a[href=\"#settings\"]').click();\ncy.get('button').contains('Or click here to logout.').click();",
               "err": {},
-              "uuid": "b50fda14-883f-4446-845d-ab945778e188",
-              "parentUUID": "3cefe69a-ecf6-49d7-b6fa-30557aae8a03",
+              "uuid": "1fc59c2d-03a4-4176-b243-f4980359de2a",
+              "parentUUID": "826c523e-1a13-40e3-a9d4-55bf1b9c9793",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b50fda14-883f-4446-845d-ab945778e188"
+            "1fc59c2d-03a4-4176-b243-f4980359de2a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4587,
+          "duration": 5565,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
